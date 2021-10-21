@@ -1,0 +1,44 @@
+.lorem {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.lorem:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    transform: scale(0);
+    transition: all 1s;
+}
+
+
+.lorem:hover:after {
+    transform: scale(1);
+}
+
+.lorem::first-letter {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.lorem::selection {
+    background: royalblue;
+    color: salmon;
+}
+
+.link-wrap a::visited {
+    color: red;
+}
+
+button:focus {
+    border: 2px solid red;
+}
+
+ul li:nth-child(3n+1) {
+    color: red;
+}
